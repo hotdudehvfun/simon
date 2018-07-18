@@ -82,8 +82,6 @@ function feedPlayerArray(arg)
 		{
 			console.log("wrong");
 			message.innerHTML=WMessageArray[getRandomInt(0,WMessageArray.length-1)]+"!";
-			score=0;
-			scoreButton.innerHTML=score;
 			isGameRunning=false;
 			feedingAllowed=false;
 			gameLength=1;
@@ -144,6 +142,8 @@ function playGame()
 	if (!isGameRunning)
 	{
 		isGameRunning=true;
+		score=0;
+		scoreButton.innerHTML=score;
 		feedCpuArray();
 	}
 
