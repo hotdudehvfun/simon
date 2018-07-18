@@ -1,0 +1,140 @@
+
+*
+{
+  font-family: 'Roboto', sans-serif;
+}
+body
+{
+ background: linear-gradient(rgb(229, 239, 193),rgb(162, 213, 171),rgb(57, 174, 169),rgb(85, 123, 131),rgb(91, 81, 81));
+ overflow: hidden;
+ margin: 0px;
+}
+.grid {
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 60vh;
+    height: 80vw;
+    max-height: 60vh;
+    font-size: 1rem;
+    top: 12%;
+    position: relative;
+}
+.row {
+    display: flex;
+}
+.box {
+    
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    flex: 1 0 auto;
+    font-size: xx-large;
+    position: relative;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.2s all;
+}
+.box:after {
+    content: "";
+    float:left;
+    display: block;
+    padding-top: 100%;
+
+}
+.box .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selected-a
+{
+  transform: scale(1.05);
+  box-shadow: 1px 1px 25px rgb(229, 239, 193);
+}
+.selected-b
+{
+  transform: scale(1.05);
+  box-shadow: 1px 1px 25px rgb(162, 213, 171);
+}
+.selected-c
+{
+  transform: scale(1.05);
+  box-shadow: 1px 1px 25px ,rgb(57, 174, 169);
+}
+.selected-d
+{
+  transform: scale(1.05);
+  box-shadow: 1px 1px 25px ,rgb(85, 123, 131);
+}
+
+#a
+{
+  background:rgb(229, 239, 193);
+}
+#b
+{
+  background:rgb(162, 213, 171);
+}
+#c
+{
+  background:rgb(57, 174, 169);
+}
+#d
+{
+  background:rgb(85, 123, 131);
+}
+#score
+{
+    border: none;
+    width: 90%;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2px;
+    background: transparent;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+#start
+{
+        border: 1px solid #dadada;
+    width: 90%;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2px;
+    background: transparent;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+
+#message
+{
+    
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #dadada;
+    width: 90%;
+    font-size: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2px;
+    background: transparent;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: center;
+    margin-top: 2%;
+}
